@@ -1,30 +1,49 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Textures/base_keyboard.png" type="Texture" id=2]
 [ext_resource path="res://Textures/base_ui.png" type="Texture" id=3]
 [ext_resource path="res://Textures/ui_slider.png" type="Texture" id=4]
+[ext_resource path="res://Textures/piano_left.png" type="Texture" id=5]
+[ext_resource path="res://Textures/piano_mid.png" type="Texture" id=6]
+[ext_resource path="res://Textures/piano_right.png" type="Texture" id=7]
+[ext_resource path="res://Sounds/key_1.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Sounds/key_2.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Sounds/key_3.ogg" type="AudioStream" id=10]
 
 [node name="Piano" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="base_keyboard" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 centered = false
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="base_ui" type="Sprite" parent="."]
 texture = ExtResource( 3 )
 centered = false
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="ui_slider" type="Sprite" parent="."]
 position = Vector2( 508, 445 )
 scale = Vector2( 0.0827409, 0.303784 )
 texture = ExtResource( 4 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="button_slider" type="Button" parent="ui_slider"]
@@ -33,3 +52,362 @@ margin_left = -67.0
 margin_top = -65.0
 margin_right = 56.0
 margin_bottom = 67.0
+
+[node name="key_1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 21, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_24" type="Sprite" parent="."]
+visible = false
+position = Vector2( 143.174, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_25" type="Sprite" parent="."]
+visible = false
+position = Vector2( 301.841, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_26" type="Sprite" parent="."]
+visible = false
+position = Vector2( 420.842, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_27" type="Sprite" parent="."]
+visible = false
+position = Vector2( 582.682, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_28" type="Sprite" parent="."]
+visible = false
+position = Vector2( 703.27, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_29" type="Sprite" parent="."]
+visible = false
+position = Vector2( 861.937, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_30" type="Sprite" parent="."]
+visible = false
+position = Vector2( 982.524, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_31" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1142.78, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_32" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1263.36, 597 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 60, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_12" type="Sprite" parent="."]
+visible = false
+position = Vector2( 180.318, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_13" type="Sprite" parent="."]
+visible = false
+position = Vector2( 220.703, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_14" type="Sprite" parent="."]
+visible = false
+position = Vector2( 340.151, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_15" type="Sprite" parent="."]
+visible = false
+position = Vector2( 459.599, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_16" type="Sprite" parent="."]
+visible = false
+position = Vector2( 499.984, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_17" type="Sprite" parent="."]
+visible = false
+position = Vector2( 620.001, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_18" type="Sprite" parent="."]
+visible = false
+position = Vector2( 740.017, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_19" type="Sprite" parent="."]
+visible = false
+position = Vector2( 779.833, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_20" type="Sprite" parent="."]
+visible = false
+position = Vector2( 900.419, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_21" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1020.44, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_22" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1060.82, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_23" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1180.27, 597 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 99, 597 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 257.829, 596.186 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 378.376, 596.186 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_6" type="Sprite" parent="."]
+visible = false
+position = Vector2( 537.204, 596.186 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_7" type="Sprite" parent="."]
+visible = false
+position = Vector2( 657.751, 596.186 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_8" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1060, 720 )
+texture = ExtResource( 7 )
+offset = Vector2( -241.791, -123.814 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_9" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1179.73, 720 )
+texture = ExtResource( 7 )
+offset = Vector2( -241.791, -123.814 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_10" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1340.19, 720 )
+texture = ExtResource( 7 )
+offset = Vector2( -241.791, -123.814 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="key_11" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1460.74, 720 )
+texture = ExtResource( 7 )
+offset = Vector2( -241.791, -123.814 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Audio1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="Audio2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="Audio3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="Audio4" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio5" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio6" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio7" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio8" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio9" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio10" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio11" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio12" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio13" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio14" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio15" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio16" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio17" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio18" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio19" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio20" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio21" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio22" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio23" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio24" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio25" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio26" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio27" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio28" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio29" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio30" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio31" type="AudioStreamPlayer" parent="."]
+
+[node name="Audio32" type="AudioStreamPlayer" parent="."]
