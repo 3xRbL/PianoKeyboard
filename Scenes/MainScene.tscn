@@ -1,15 +1,34 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Textures/base_keyboard.png" type="Texture" id=2]
-[ext_resource path="res://Textures/base_ui.png" type="Texture" id=3]
-[ext_resource path="res://Textures/ui_slider.png" type="Texture" id=4]
-[ext_resource path="res://Textures/piano_left.png" type="Texture" id=5]
-[ext_resource path="res://Textures/piano_mid.png" type="Texture" id=6]
-[ext_resource path="res://Textures/piano_right.png" type="Texture" id=7]
-[ext_resource path="res://Sounds/key_1.ogg" type="AudioStream" id=8]
-[ext_resource path="res://Sounds/key_2.ogg" type="AudioStream" id=9]
-[ext_resource path="res://Sounds/key_3.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Textures/keyboard_keys.png" type="Texture" id=3]
+[ext_resource path="res://Textures/base_ui.png" type="Texture" id=4]
+[ext_resource path="res://Textures/ui_slider.png" type="Texture" id=5]
+[ext_resource path="res://Textures/piano_left.png" type="Texture" id=6]
+[ext_resource path="res://Textures/piano_mid.png" type="Texture" id=7]
+[ext_resource path="res://Textures/piano_right.png" type="Texture" id=8]
+[ext_resource path="res://Sounds/key_1.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Sounds/key_2.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/key_3.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/key_4.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/key_5_raide_c.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Sounds/key_6_b.ogg" type="AudioStream" id=14]
+[ext_resource path="res://Sounds/key_7_m.ogg" type="AudioStream" id=15]
+[ext_resource path="res://Sounds/key_8_a.ogg" type="AudioStream" id=16]
+[ext_resource path="res://Sounds/key_9_s.ogg" type="AudioStream" id=17]
+[ext_resource path="res://Sounds/key_10_d.ogg" type="AudioStream" id=18]
+[ext_resource path="res://Sounds/key_11_f.ogg" type="AudioStream" id=19]
+[ext_resource path="res://Sounds/key_12_fsharp.ogg" type="AudioStream" id=20]
+[ext_resource path="res://Sounds/key_13_g.ogg" type="AudioStream" id=21]
+[ext_resource path="res://Sounds/key_14_gsharp.ogg" type="AudioStream" id=22]
+[ext_resource path="res://Sounds/key_15_h.ogg" type="AudioStream" id=23]
+[ext_resource path="res://Sounds/key_16_hsarp.ogg" type="AudioStream" id=24]
+[ext_resource path="res://Sounds/key_17_j.ogg" type="AudioStream" id=25]
+[ext_resource path="res://Sounds/key_18_q.ogg" type="AudioStream" id=26]
+[ext_resource path="res://Sounds/key_19_w.ogg" type="AudioStream" id=27]
+[ext_resource path="res://Textures/show_keys_no.png" type="Texture" id=28]
+[ext_resource path="res://Textures/show_keys_yes.png" type="Texture" id=29]
 
 [node name="Piano" type="Node2D"]
 script = ExtResource( 1 )
@@ -29,8 +48,17 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="base_ui" type="Sprite" parent="."]
+[node name="keyboard_keys" type="Sprite" parent="."]
+visible = false
 texture = ExtResource( 3 )
+centered = false
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="base_ui" type="Sprite" parent="."]
+texture = ExtResource( 4 )
 centered = false
 __meta__ = {
 "_edit_group_": true,
@@ -40,7 +68,7 @@ __meta__ = {
 [node name="ui_slider" type="Sprite" parent="."]
 position = Vector2( 508, 445 )
 scale = Vector2( 0.0827409, 0.303784 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -56,7 +84,7 @@ margin_bottom = 67.0
 [node name="key_1" type="Sprite" parent="."]
 visible = false
 position = Vector2( 21, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -65,7 +93,7 @@ __meta__ = {
 [node name="key_24" type="Sprite" parent="."]
 visible = false
 position = Vector2( 143.174, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -74,7 +102,7 @@ __meta__ = {
 [node name="key_25" type="Sprite" parent="."]
 visible = false
 position = Vector2( 301.841, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -83,7 +111,7 @@ __meta__ = {
 [node name="key_26" type="Sprite" parent="."]
 visible = false
 position = Vector2( 420.842, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -92,7 +120,7 @@ __meta__ = {
 [node name="key_27" type="Sprite" parent="."]
 visible = false
 position = Vector2( 582.682, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -101,7 +129,7 @@ __meta__ = {
 [node name="key_28" type="Sprite" parent="."]
 visible = false
 position = Vector2( 703.27, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -110,7 +138,7 @@ __meta__ = {
 [node name="key_29" type="Sprite" parent="."]
 visible = false
 position = Vector2( 861.937, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -119,7 +147,7 @@ __meta__ = {
 [node name="key_30" type="Sprite" parent="."]
 visible = false
 position = Vector2( 982.524, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -128,7 +156,7 @@ __meta__ = {
 [node name="key_31" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1142.78, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -137,7 +165,7 @@ __meta__ = {
 [node name="key_32" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1263.36, 597 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -146,7 +174,7 @@ __meta__ = {
 [node name="key_2" type="Sprite" parent="."]
 visible = false
 position = Vector2( 60, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -155,7 +183,7 @@ __meta__ = {
 [node name="key_12" type="Sprite" parent="."]
 visible = false
 position = Vector2( 180.318, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -164,7 +192,7 @@ __meta__ = {
 [node name="key_13" type="Sprite" parent="."]
 visible = false
 position = Vector2( 220.703, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -173,7 +201,7 @@ __meta__ = {
 [node name="key_14" type="Sprite" parent="."]
 visible = false
 position = Vector2( 340.151, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -182,7 +210,7 @@ __meta__ = {
 [node name="key_15" type="Sprite" parent="."]
 visible = false
 position = Vector2( 459.599, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -191,7 +219,7 @@ __meta__ = {
 [node name="key_16" type="Sprite" parent="."]
 visible = false
 position = Vector2( 499.984, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -200,7 +228,7 @@ __meta__ = {
 [node name="key_17" type="Sprite" parent="."]
 visible = false
 position = Vector2( 620.001, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -209,7 +237,7 @@ __meta__ = {
 [node name="key_18" type="Sprite" parent="."]
 visible = false
 position = Vector2( 740.017, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -218,7 +246,7 @@ __meta__ = {
 [node name="key_19" type="Sprite" parent="."]
 visible = false
 position = Vector2( 779.833, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -227,7 +255,7 @@ __meta__ = {
 [node name="key_20" type="Sprite" parent="."]
 visible = false
 position = Vector2( 900.419, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -236,7 +264,7 @@ __meta__ = {
 [node name="key_21" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1020.44, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -245,7 +273,7 @@ __meta__ = {
 [node name="key_22" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1060.82, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -254,7 +282,7 @@ __meta__ = {
 [node name="key_23" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1180.27, 597 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -263,7 +291,7 @@ __meta__ = {
 [node name="key_3" type="Sprite" parent="."]
 visible = false
 position = Vector2( 99, 597 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -272,7 +300,7 @@ __meta__ = {
 [node name="key_4" type="Sprite" parent="."]
 visible = false
 position = Vector2( 257.829, 596.186 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -281,7 +309,7 @@ __meta__ = {
 [node name="key_5" type="Sprite" parent="."]
 visible = false
 position = Vector2( 378.376, 596.186 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -290,7 +318,7 @@ __meta__ = {
 [node name="key_6" type="Sprite" parent="."]
 visible = false
 position = Vector2( 537.204, 596.186 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -299,7 +327,7 @@ __meta__ = {
 [node name="key_7" type="Sprite" parent="."]
 visible = false
 position = Vector2( 657.751, 596.186 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -308,7 +336,7 @@ __meta__ = {
 [node name="key_8" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1060, 720 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 offset = Vector2( -241.791, -123.814 )
 __meta__ = {
 "_edit_group_": true,
@@ -318,7 +346,7 @@ __meta__ = {
 [node name="key_9" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1179.73, 720 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 offset = Vector2( -241.791, -123.814 )
 __meta__ = {
 "_edit_group_": true,
@@ -328,7 +356,7 @@ __meta__ = {
 [node name="key_10" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1340.19, 720 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 offset = Vector2( -241.791, -123.814 )
 __meta__ = {
 "_edit_group_": true,
@@ -338,7 +366,7 @@ __meta__ = {
 [node name="key_11" type="Sprite" parent="."]
 visible = false
 position = Vector2( 1460.74, 720 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 offset = Vector2( -241.791, -123.814 )
 __meta__ = {
 "_edit_group_": true,
@@ -346,45 +374,61 @@ __meta__ = {
 }
 
 [node name="Audio1" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
-
-[node name="Audio2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
 
-[node name="Audio3" type="AudioStreamPlayer" parent="."]
+[node name="Audio2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 
+[node name="Audio3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
 [node name="Audio4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
 
 [node name="Audio5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
 
 [node name="Audio6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 
 [node name="Audio7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
 
 [node name="Audio8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
 
 [node name="Audio9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
 
 [node name="Audio10" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
 
 [node name="Audio11" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 19 )
 
 [node name="Audio12" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 20 )
 
 [node name="Audio13" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
 
 [node name="Audio14" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
 
 [node name="Audio15" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
 
 [node name="Audio16" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 24 )
 
 [node name="Audio17" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
 
 [node name="Audio18" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )
 
 [node name="Audio19" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
 
 [node name="Audio20" type="AudioStreamPlayer" parent="."]
 
@@ -411,3 +455,46 @@ stream = ExtResource( 10 )
 [node name="Audio31" type="AudioStreamPlayer" parent="."]
 
 [node name="Audio32" type="AudioStreamPlayer" parent="."]
+
+[node name="show_keys_no" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.8 )
+position = Vector2( 590.644, 87.1303 )
+scale = Vector2( 0.27103, 0.27103 )
+texture = ExtResource( 28 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="show_keys_yes" type="Sprite" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.8 )
+position = Vector2( 590.644, 87.1303 )
+scale = Vector2( 0.27103, 0.27103 )
+texture = ExtResource( 29 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="hide_keys" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 473.168
+margin_top = 11.2774
+margin_right = 577.168
+margin_bottom = 156.277
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="show_keys" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 580.0
+margin_top = 13.0
+margin_right = 708.0
+margin_bottom = 158.0
+__meta__ = {
+"_edit_lock_": true
+}
+[connection signal="pressed" from="hide_keys" to="." method="_on_hide_keys_pressed"]
+[connection signal="pressed" from="show_keys" to="." method="_on_show_keys_pressed"]

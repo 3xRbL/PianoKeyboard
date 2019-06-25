@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/key_5_raide_c.ogg-725ea37a0746dbc223356752067b7109.oggstr"
+
+[deps]
+
+source_file="res://Sounds/key_5_raide_c.ogg"
+dest_files=[ "res://.import/key_5_raide_c.ogg-725ea37a0746dbc223356752067b7109.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

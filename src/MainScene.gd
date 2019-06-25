@@ -1,7 +1,7 @@
 extends Node2D
 
 #TODO:
-#Max volume, record keys ir show keys ant photoshop!
+#Max volume, record keys
 #Kai record 4-5 fade out
 
 #Volume Slider
@@ -86,10 +86,21 @@ func ConvertId(id):
 		return 23
 	if id ==  31 :
 		return 11
-	return id #32 = 32
+	return id #32 = 32 
 
 func HighlightKey(on, id):
 	if on:
 		get_node("key_" + str(ConvertId(id))).show()
 	else:
 		get_node("key_" + str(ConvertId(id))).hide()
+
+func _on_hide_keys_pressed():
+	$show_keys_yes.hide()
+	$show_keys_no.show()
+	$keyboard_keys.hide()
+
+
+func _on_show_keys_pressed():
+	$show_keys_no.hide()
+	$show_keys_yes.show()
+	$keyboard_keys.show()
